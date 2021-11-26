@@ -1,0 +1,59 @@
+html{ 
+    font-family:serif;
+
+}
+.main span{
+    color:red;
+}
+.header {
+    background-color:rgb(76, 196, 218);
+    height: 140px;
+    
+    border:2px solid rgb(111, 202, 255);
+    
+}
+.header h1{
+    font-size: 70px; 
+    float:left;	
+    font-family: 'IM Fell DW Pica SC', serif;
+    padding-left: 10px;
+    
+}
+.go_top{
+    float:right;
+    padding-top: 110px;
+}
+
+.main{
+   font-size:20px;
+   text-align: center;
+}
+.x{
+    border-bottom: 2px dashed red;
+    display:inline-block;
+    color:red;
+}
+.btn{
+    width:300px;
+    padding:10px;
+    background: chartreuse;
+    box-shadow:3px 3px rgb(32, 32, 32);    
+    
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:active{
+    position: relative;
+    top:3px;
+    box-shadow:none;
+    opacity: 0.8;
+}
+.q h4{
+    background: darkgrey;
+    margin:8px;
+    padding:8px;
+}
+.q span{
+    color:rgba(156, 156, 156, 0.623);
+}

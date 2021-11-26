@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content="device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="ie=edge">
+    <title>Melancholy　test</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}">
+    	
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+<style>
+    h4 { background-color: darkgrey;}
+    div.q{
+        margin:8px;padding:8px;}
+    div.ansr{text-align : center ;}
+</style>
+</head>
+<body>
+    <div class='header'>   
+        <h1>Melancholy test...</h1>
+        <a href="/" class=go_top>Topに戻る</a>
+    </div>
+    <br>
+    <div >
+        {%block contents %} 
+        {% endblock %} 
+    </div>
+
+</body>
+</html>

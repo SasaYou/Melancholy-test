@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content="device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="ie=edge">
+    <title>Melancholy　test</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}">
+    	
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+</head>
+<body>
+    <div class='header'>   
+        <h1>Melancholy test...</h1>
+    </div>
+　　<br>
+    <div class='main'>    
+        <h2> 採点結果...</h2>
+        <h1>{{total}}　points</h1>
+       {%if total>=65 %}
+        <br>
+            <h3>心が壊れかけています。</h3>
+            <p>大変でしたね。</p>
+            <p>どうかゆっくりお休みになって下さい。</p>
+        <br>
+        {% elif total>=50 %} 
+        <br>
+            <h3>心が疲れているようです。</h3>
+            <p>毎日お疲れ様です。</p>
+            <p>たまには休む事も大事ですよ。</p>
+        <br>
+        {% else %} 
+        <br>
+            <h3>検査結果は合格です！</h3>
+            <p>元気良く行きましょう！</p>
+            <p>また、チェックしに来て下さいね！</p>
+        <br>
+        {%endif %} 
+        <form action="/" method="GET">
+            <input type="submit"  value="Topに戻る" >
+        </form>
+        
+    </div>
+        
+    <footer>
+        
+    </footer>
+</body>
+</html>

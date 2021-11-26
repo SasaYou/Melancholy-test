@@ -1,0 +1,26 @@
+{% extends "templet.html" %} 
+
+
+{% block contents %}
+<div class="p">
+<p>下の各々の文章を読んで、最近のあなたの状態に最もよく当てはまると思われる段階を
+1 (ほとんどない)　〜4　(ほとんどいつも)の中から選んで選択して下さい。<br>
+あまり考えないで、最近感じている通りに選択して下さい。</p>
+</div>
+<form action="/ans" ,method="GET">
+{% for q in qs %}  
+    <div class='q'>
+        <h4>{{q.number}}問目、{{q.sentence}}</h4>
+        <input type="radio" name={{q.number}}q value=1>1
+        <input type="radio" name={{q.number}}q value=2>2
+        <input type="radio" name={{q.number}}q value=3>3
+        <input type="radio" name={{q.number}}q value=4>4<span>　　　 1　(ほとんどない)　〜　4　(ほとんどいつも)</span>
+    </div>
+{% endfor %}
+<br>
+    <div class="ansr">
+    <input type="submit"　 value="回答して次へ進む">   
+    </div>
+</form>
+{% endblock %}
+

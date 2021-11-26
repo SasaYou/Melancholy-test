@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content="device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="ie=edge">
+    <title>Melancholy　test</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}">
+    	
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+</head>
+<body>
+    <div class='header'>   
+        <h1>Melancholy test...</h1>
+       
+    </div>
+　　<br>
+    <div class='main'>    
+        <h2> 出題される問題に答え、憂うつ度を測りましょう!</h2>
+        <h4>このテストは「自己評価式抑うつ性尺度」を測るものです。</h4>
+        <p class='x'>自己評価式抑うつ性尺度（SDS）</p>
+        <p>SDSとは<span>S</span>elf-rating <span>D</span>epression <span>S</span>caleの略で、うつ性自己評価尺度を意味します。 </p>
+        <p>国内にある多くの心療内科で広く用いられており、憂鬱感や疲れやすさ、入眠障害など、 </p>
+        <p>被験者の抑うつ性の程度を見るためのセルフチェックによる心理検査です。</p>
+        <br>
+        <form action="/strt" method="GET">
+            <input type="submit" class="btn" value="Chack Start!" >
+        </form>
+        
+    </div>
+        
+    <footer>
+        
+    </footer>
+</body>
+</html>
