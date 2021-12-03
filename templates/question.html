@@ -1,3 +1,4 @@
+
 {% extends "templet.html" %} 
 
 
@@ -10,11 +11,12 @@
 <form action="/ans" ,method="GET">
 {% for q in qs %}  
     <div class='q'>
-        <h4>{{q.number}}問目、{{q.sentence}}</h4>
+        <h4>{{q.number}}問目:  {{q.sentence}}</h4>
         <input type="radio" name={{q.number}}q value=1>1
         <input type="radio" name={{q.number}}q value=2>2
         <input type="radio" name={{q.number}}q value=3>3
-        <input type="radio" name={{q.number}}q value=4>4<span>　　　 1　(ほとんどない)　〜　4　(ほとんどいつも)</span>
+        <input type="radio" name={{q.number}}q value=4>4<span>　　　1 (ほとんどない)　〜4　(ほとんどいつも)</span>
+        
     </div>
 {% endfor %}
 <br>
